@@ -191,7 +191,7 @@ export default function LocationsPage({ onOpenQuote }) {
                   Because we are based in Altamonte Springs at the intersection of I-4, SR 436, and SR 414, our work vans can be at your residence in Orlando, Clermont, Debary, Apopka, or Mount Dora quickly for on-site assessments and scheduled construction.
                 </p>
                 <div className="flex flex-wrap gap-4 text-xs sm:text-sm text-cyan-300 font-semibold pt-2">
-                  <span>✓ 10% Repeat Customer Discount</span>
+                
                   <span>✓ $50 Referral Reward</span>
                   <span>✓ Licensed Florida Contractor</span>
                 </div>

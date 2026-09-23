@@ -530,7 +530,7 @@ export default function HomePage({ onOpenQuote }) {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Contact Hugo Coronel today for an honest, transparent estimate on your kitchen, bathroom, drywall, or complete home renovation. Don’t forget to mention our <strong className="text-cyan-400">10% repeat client discount</strong> or <strong className="text-emerald-400">$50 referral reward</strong>!
+            Contact Hugo Coronel today for an honest, transparent estimate on your kitchen, bathroom, drywall, or complete home renovation. Don’t forget to mention our  <strong className="text-emerald-400">$50 referral reward</strong>!
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">

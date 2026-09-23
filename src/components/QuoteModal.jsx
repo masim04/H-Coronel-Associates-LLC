@@ -11,7 +11,6 @@ export default function QuoteModal({ isOpen, onClose }) {
     service: 'Kitchen Remodeling',
     projectScope: 'Full Remodel',
     timeline: 'Within 2-4 weeks',
-    isRepeatClient: false,
     referredBy: '',
     notes: ''
   })
@@ -75,10 +74,10 @@ export default function QuoteModal({ isOpen, onClose }) {
               <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
                 Thank you, <span className="font-semibold text-slate-900">{formData.name || 'valued client'}</span>. Hugo Coronel or a lead project supervisor will review your project details and contact you at <span className="font-semibold text-slate-900">{formData.phone || 'your phone'}</span> within 24 business hours to schedule your consultation.
               </p>
-              {formData.isRepeatClient && (
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-50 text-amber-800 text-xs font-bold border border-amber-200">
-                  <Tag className="w-4 h-4 text-amber-600" />
-                  <span>10% Repeat Customer Discount has been applied to your record!</span>
+              {formData.referredBy && (
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200">
+                  <Tag className="w-4 h-4 text-emerald-600" />
+                  <span>$50 Referral Reward noted for: {formData.referredBy}!</span>
                 </div>
               )}
               <div className="pt-6">
@@ -94,10 +93,10 @@ export default function QuoteModal({ isOpen, onClose }) {
             <form onSubmit={handleSubmit} className="space-y-5">
               
               {/* Special offers banner in form */}
-              <div className="p-3.5 rounded-2xl bg-cyan-50 border border-cyan-200 text-cyan-900 text-xs flex items-center justify-between gap-3">
+              <div className="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2 font-medium">
-                  <Tag className="w-4 h-4 text-cyan-600 shrink-0" />
-                  <span>Are you a returning client? Claim your <strong>10% repeat discount</strong> below!</span>
+                  <Tag className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <span>Were you referred by a friend or neighbor? They will receive a <strong>$50 cash reward</strong>!</span>
                 </div>
               </div>
 
@@ -200,32 +199,21 @@ export default function QuoteModal({ isOpen, onClose }) {
                 </div>
               </div>
 
-              {/* Repeat Client Checkbox & Referral */}
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
-                <label className="flex items-center gap-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={formData.isRepeatClient}
-                    onChange={(e) => setFormData({ ...formData, isRepeatClient: e.target.checked })}
-                    className="w-4 h-4 rounded text-cyan-600 focus:ring-cyan-500 border-slate-300"
-                  />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-800">
-                    I am a returning client (Apply 10% Repeat Business Discount)
-                  </span>
+              {/* Referral Input */}
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+                  Were you referred by someone? ($50 Cash Referral Reward)
                 </label>
-
-                <div>
-                  <label className="block text-xs font-medium text-slate-500 mb-1">
-                    Were you referred by someone? (They will receive a $50 cash bonus!)
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Referrer's name or phone number"
-                    value={formData.referredBy}
-                    onChange={(e) => setFormData({ ...formData, referredBy: e.target.value })}
-                    className="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-500 bg-white"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Referrer's name or phone number"
+                  value={formData.referredBy}
+                  onChange={(e) => setFormData({ ...formData, referredBy: e.target.value })}
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
+                />
+                <p className="text-[11px] text-slate-500">
+                  Your friend, family member, or neighbor will receive a $50 cash reward upon your signed project contract.
+                </p>
               </div>
 
               {/* Notes */}

@@ -16,13 +16,13 @@ export default function Footer({ onOpenQuote }) {
             <div className="lg:col-span-8 space-y-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-900/60 border border-cyan-700/60 text-cyan-300 text-xs font-bold uppercase tracking-wider">
                 <Tag className="w-3.5 h-3.5" />
-                <span>Exclusive Client Savings</span>
+                <span>Client Referral Rewards</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                10% Off Repeat Business & $50 Referral Cash Reward
+                $50 Referral Cash Reward Program
               </h3>
               <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-                Whether you’re embarking on your second home remodel or referring a friend or neighbor in Central Florida, H Coronel & Associates LLC rewards your loyalty.
+                Recommend our remodeling and contracting services to friends, family, or neighbors in Central Florida and receive a $50 cash bonus upon project contract initiation.
               </p>
             </div>
 

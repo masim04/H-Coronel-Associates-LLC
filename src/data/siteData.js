@@ -55,14 +55,6 @@ export const BUSINESS_INFO = {
 
 export const SPECIAL_OFFERS = [
   {
-    id: "repeat-client",
-    title: "10% Off For Repeat Business",
-    badge: "Loyal Client Benefit",
-    description: "We believe in long-term relationships with Central Florida homeowners. Enjoy an exclusive 10% discount on all labor for your next renovation project with H Coronel & Associates LLC.",
-    cta: "Claim 10% Discount",
-    terms: "Applicable on any subsequent remodel or renovation contract."
-  },
-  {
     id: "referral-bonus",
     title: "$50 Referral Reward",
     badge: "Share With Friends",
@@ -460,7 +452,7 @@ export const TESTIMONIALS = [
     project: "Complete Kitchen & Bathroom Remodel",
     rating: 5,
     date: "2 months ago",
-    comment: "Hugo and his crew at H Coronel & Associates are true masters of their trade. They remodeled our entire kitchen with custom cabinets and quartz countertops, then transformed our master bath into a luxury walk-in shower. They were always on time, kept the work area clean every night, and the quality is outstanding! Plus we got the 10% repeat discount on our second project. Highly recommend!"
+    comment: "Hugo and his crew at H Coronel & Associates are true masters of their trade. They remodeled our entire kitchen with custom cabinets and quartz countertops, then transformed our master bath into a luxury walk-in shower. They were always on time, kept the work area clean every night, and the quality is outstanding! Highly recommend!"
   },
   {
     id: 2,

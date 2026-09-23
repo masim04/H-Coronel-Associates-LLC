@@ -56,7 +56,7 @@ export default function Header({ onOpenQuote }) {
           <div className="flex items-center gap-3 ml-auto">
             <div className="flex items-center gap-1 bg-cyan-950/80 text-cyan-300 border border-cyan-700/50 px-2.5 py-0.5 rounded-full text-xs font-medium">
               <Tag className="w-3.5 h-3.5 text-cyan-400" />
-              <span>10% Off Repeat • $50 Referral</span>
+              <span>$50 Referral Cash Reward</span>
             </div>
             <div className="hidden sm:flex items-center gap-1 text-slate-300 text-xs">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />

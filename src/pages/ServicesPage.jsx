@@ -174,31 +174,7 @@ export default function ServicesPage({ onOpenQuote }) {
         </div>
       </section>
 
-      {/* SPECIAL OFFERS BAR */}
-      <section className="py-12 bg-white border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="bg-gradient-to-r from-slate-900 to-cyan-950 text-white rounded-3xl p-8 sm:p-10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2 text-center md:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-900/80 text-cyan-300 text-xs font-bold uppercase">
-                <Tag className="w-3.5 h-3.5" />
-                <span>Save on Labor</span>
-              </div>
-              <h3 className="text-2xl font-extrabold text-white">
-                10% Off For Repeat Clients • $50 Cash For Referrals
-              </h3>
-              <p className="text-slate-300 text-sm max-w-xl">
-                Combine your kitchen or bathroom remodel with any of our other services and save more on your overall contract.
-              </p>
-            </div>
-            <button
-              onClick={onOpenQuote}
-              className="px-7 py-3.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold rounded-xl text-sm transition-all shrink-0 cursor-pointer shadow-lg"
-            >
-              Request Multi-Service Quote
-            </button>
-          </div>
-        </div>
-      </section>
+    
 
       {/* LIGHTBOX MODAL */}
       {lightboxImage && (
