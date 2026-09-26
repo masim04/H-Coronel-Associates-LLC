@@ -175,9 +175,9 @@ export default function Footer({ onOpenQuote }) {
 
         {/* Bottom copyright bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div>
-            &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved. Registered General Contractor in Florida.
-          </div>
+            <div>
+              Digital Excellence by <a href="https://magnivodigital.com/" className="font-bold hover:underline text-slate-300" target="_blank" rel="noopener noreferrer">Magnivo Digital Group</a>
+            </div>
           <div className="flex items-center gap-6">
             <Link to="/about" className="hover:text-slate-300 transition-colors">About Hugo Coronel</Link>
             <Link to="/services" className="hover:text-slate-300 transition-colors">Services</Link>

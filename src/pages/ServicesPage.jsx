@@ -4,7 +4,6 @@ import {
   CheckCircle2, 
   ArrowRight, 
   Phone, 
-  Tag, 
   Maximize2
 } from 'lucide-react'
 import { BUSINESS_INFO, SERVICES_DATA } from '../data/siteData'

@@ -1,4 +1,4 @@
-import logoImg from '../assets/logo.png'
+import logoImg from '../assets/logo.jpeg'
 import image4 from '../assets/image4.jpeg'
 import image5 from '../assets/image5.jpeg'
 import image6 from '../assets/image6.jpeg'
@@ -34,8 +34,8 @@ export const BUSINESS_INFO = {
   name: "H Coronel & Associates LLC",
   shortName: "H Coronel & Associates",
   type: "Licensed & Insured General Contractor",
-  phoneDisplay: "(321) 948-6358",
-  phoneRaw: "3219486358",
+  phoneDisplay: "(689) 349-3202",
+  phoneRaw: "6893493202",
   email: "hugocoronel@att.net",
   address: "Altamonte Springs, FL 32714",
   city: "Altamonte Springs",
