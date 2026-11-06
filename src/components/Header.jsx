@@ -22,7 +22,8 @@ export default function Header({ onOpenQuote }) {
     { name: 'Services', path: '/services' },
     { name: 'Service Areas', path: '/locations' },
     { name: 'Project Gallery', path: '/gallery' },
-    { name: 'Blog & Tips', path: '/blog' }
+    { name: 'Blog & Tips', path: '/blog' },
+    { name: 'Contact Us', path: '/contact' }
   ]
 
   return (
