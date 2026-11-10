@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import FloatingCallBar from './components/FloatingCallBar'
 
 // Pages
 import HomePage from './pages/HomePage'
@@ -41,9 +40,6 @@ function MainApp() {
 
       {/* Persistent Footer */}
       <Footer onOpenQuote={handleOpenQuote} />
-
-      {/* Persistent Floating Quick Call & Quote Bar */}
-      <FloatingCallBar onOpenQuote={handleOpenQuote} />
     </div>
   )
 }

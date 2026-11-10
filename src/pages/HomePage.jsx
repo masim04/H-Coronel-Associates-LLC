@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { 
   Phone, 
   ChevronRight, 
-  ShieldCheck, 
   Star, 
   MapPin, 
   CheckCircle2, 
@@ -47,13 +46,6 @@ export default function HomePage({ onOpenQuote }) {
             
             {/* Left Column: Headlines & Call to Actions */}
             <div className="lg:col-span-7 space-y-6 text-left">
-              
-              {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/40 text-cyan-300 text-xs sm:text-sm font-semibold shadow-inner">
-                <ShieldCheck className="w-4 h-4 text-cyan-400" />
-                <span>Licensed & Insured General Contractor • Altamonte Springs, FL</span>
-              </div>
-
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
                 Master Quality Remodeling in <span className="text-gradient">Central Florida</span>
@@ -551,7 +543,7 @@ export default function HomePage({ onOpenQuote }) {
           </div>
 
           <div className="pt-4 text-xs text-slate-400">
-            Altamonte Springs, FL 32714 • Licensed & Insured Contractor • hugocoronel@att.net
+            Altamonte Springs, FL 32714 • hugocoronel@att.net
           </div>
         </div>
       </section>
