@@ -64,10 +64,7 @@ export default function Footer({ onOpenQuote }) {
               H Coronel & Associates LLC is your trusted Central Florida general contractor. Specializing in turnkey kitchen & bathroom remodeling, drywall, interior & exterior painting, custom cabinetry, flooring, and finished carpentry.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400">
-              <div className="flex items-center gap-1 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">
-                <Shield className="w-4 h-4 text-emerald-400" />
-                <span>Licensed & Insured</span>
-              </div>
+              
               <div className="flex items-center gap-1 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">
                 <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
                 <span>5-Star Rated Contractor</span>
